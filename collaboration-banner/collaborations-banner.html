@@ -102,13 +102,7 @@
       object-position: top center;
     }
 
-    #container .lazy {
-      height: 100%;
-    }
-
     #container div {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
       font-size: 12px;
       letter-spacing: 0.17px;
       font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans,
@@ -207,24 +201,18 @@
               media="(min-width: 769px)"
               width="1200px"
               height="568px"
-              class="lazy"
               data-srcset="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-desktop.jpg"
             />
             <source
               media="(max-width: 700px)"
               width="700px"
               height="565px"
-              class="lazy"
               data-srcset="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-mobile.jpg"
             />
             <img
-              alt="A lazy image"
-              loading="lazy"
-              class="lazy"
               width="700px"
               height="565px"
-              class="lazy"
-              data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-desktop.jpg"
+              src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-desktop.jpg"
             />
           </picture>
 
@@ -309,12 +297,7 @@
       </div>
 
       <script>
-        //Images lazy loaded
-        var pageLazyLoad = new LazyLoad({
-          elements_selector: '[loading=lazy]',
-          use_native: false,
-        });
-
+        //Video lazy loaded
         document.addEventListener('DOMContentLoaded', function () {
           var lazyVideos = [].slice.call(
             document.querySelectorAll('video.lazy')
@@ -349,7 +332,6 @@
           }
         });
 
-        //Banner Video's are not lazy loaded.
         //Responsive code for changing between desktop and mobile video.
         var video = document.querySelectorAll('video.responsive');
         function addSourceToVideo(element, src) {
