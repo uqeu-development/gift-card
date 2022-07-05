@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1654835415111/css/splide.css"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      margin: 0px auto;
+      max-width: 1400px;
+    }
+
+    #container h1,
+    #container h2,
+    #container h3,
+    #container h4,
+    #container h5,
+    #container h6 {
+      text-transform: uppercase;
+      font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans,
+        Roboto, Arial, Arial Unicode MS, sans-serif;
+    }
+
+    #container a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    #container span {
+      line-height: 2;
+    }
+
+    #container h2 {
+      font-size: 22px;
+      letter-spacing: 0.3px;
+      font-weight: 700;
+    }
+
+    #container h3 {
+      font-size: 18px;
+      letter-spacing: 0.25px;
+    }
+
+    #container h4 {
+      font-size: 14px;
+      letter-spacing: 0.2px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      #container h4 {
+        font-size: 12px;
+      }
+      #container h3 {
+        font-size: 14px;
+      }
+      #container h2 {
+        font-size: 20px;
+      }
+      #container div {
+        font-size: 10px;
+      }
+    }
+
+    #container .subheader {
+      font-size: 12px;
+      font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans,
+        Roboto, Arial, Arial Unicode MS, sans-serif;
+      letter-spacing: 0.23px;
+      font-weight: 500;
+    }
+
+    #container p {
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans,
+        Roboto, Arial, Arial Unicode MS, sans-serif;
+    }
+
+    #container img,
+    video {
+      width: 100%;
+      border: 0;
+      height: auto;
+      -webkit-transition: opacity 1s;
+      transition: opacity 1s;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    #container .lazy {
+      height: 100%;
+    }
+
+    #container div {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 12px;
+      letter-spacing: 0.17px;
+      font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans,
+        Roboto, Arial, Arial Unicode MS, sans-serif;
+    }
+
+    #container #collab-banner .uppercase-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: black;
+      border-bottom: 1px solid black;
+      font-size: 14px;
+      margin: 0 30px 30px 0;
+    }
+    #container #collab-banner .capitalize-link {
+      text-transform: capitalize;
+      border-bottom: 1px solid black;
+      color: black;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    #container #collab-banner .uppercase-links-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    #container #collab-banner h2 {
+      font-size: 28px;
+    }
+    #container #collab-banner .collab-logo {
+      height: auto;
+      width: 40%;
+    }
+
+    #container #collab-banner #collab-info {
+      display: grid;
+      -ms-grid-columns: (1fr);
+      grid-template-columns: repeat(2, 1fr);
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+
+      background-color: white;
+      border: 1px solid #dadada;
+    }
+
+    #container #collab-banner #collab-info .collab-copy {
+      padding: 10px 40px 20px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      #container #collab-banner #collab-info {
+        -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #ebebeb;
+        border: none;
+      }
+      #container #collab-banner .collab-logo {
+        display: none;
+      }
+      #container #collab-banner .uppercase-links-container {
+        justify-content: center;
+        margin-top: 25px;
+      }
+      #container #collab-banner .uppercase-link {
+        font-size: 13px;
+        margin: 0 20px 10px 0;
+      }
+      #container #collab-banner #collab-info .collab-copy {
+        padding: 0px 20px 15px 20px;
+        text-align: center;
+      }
+      #container #collab-banner #collab-info .collab-copy h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js"></script>
+
+    <!-- Container width matches the L3 grid -->
+    <div id="container">
+      <div id="collab-banner">
+        <div id="collab-info">
+          <!-- OPTION 1: BANNER IMAGE -->
+          <!-- Desktop Image uploaded needs to be - height="565" width="700px" -->
+          <!-- Mobile Image uploaded needs to be - height="565" width="700px" -->
+
+          <picture width="1200px" height="568px">
+            <source
+              media="(min-width: 769px)"
+              width="1200px"
+              height="568px"
+              class="lazy"
+              data-srcset="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-desktop.jpg"
+            />
+            <source
+              media="(max-width: 700px)"
+              width="700px"
+              height="565px"
+              class="lazy"
+              data-srcset="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-mobile.jpg"
+            />
+            <img
+              alt="A lazy image"
+              loading="lazy"
+              class="lazy"
+              width="700px"
+              height="565px"
+              class="lazy"
+              data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/banner-desktop.jpg"
+            />
+          </picture>
+
+          <!-- OPTION 2: BANNER VIDEO - POSTER NEEDED FOR BOTH DESKTOP AND MOBILE -->
+          <!-- Desktop and MobileVideo uploaded needs to be - height="565" width="700px" -->
+
+          <!-- <video
+            muted=""
+            autoplay=""
+            playsinline=""
+            loop=""
+            class="responsive"
+            data-desktop-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/ss22-suw/hero-poster-pc.jpg"
+            data-mobile-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/ss22-suw/hero-poster-mb.jpg"
+            data-desktop-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/ss22-suw/suw-hero.mp4"
+            data-mobile-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/ss22-suw/suw-hero-mb.mp4"
+          ></video> -->
+          <div class="collab-copy">
+            <a href="https://www.uniqlo.com/uk/en/home">
+              <img
+                class="collab-logo"
+                src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/collaborations/marni/pc-marni-logo-01.png"
+                alt="collaboration-logo"
+              />
+            </a>
+            <h2>Heading Title</h2>
+            <!-- NOTE: Collaboration Description: No more than 210 characters 
+                       Collaboration Notice: No more than 100 charaters-->
+            <!-- 
+            CAN USE BELOW INSIDE 
+            <a>Link</a>
+            <b>Bold</b>
+            <i>Italic</i>
+            <span>White space line - double line spacing<span>
+           -->
+
+            <p>
+              Collaboration description - NOTE: no more than 210 characters
+              Collaboration description - NOTE: no more than 210 characters
+              Collaboration description - NOTE: no more than 210 characters
+              Collaboration description
+            </p>
+            <p class="subheader">
+              Collaboration notice... NOTE: 100 characters Collaboration
+              notice... NOTE: 100 characters
+            </p>
+
+            <a class="capitalize-link" href="https://www.uniqlo.com/uk/en/home"
+              >Capitalize link</a
+            >
+            <div class="uppercase-links-container">
+              <a class="uppercase-link" href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              ><a
+                class="uppercase-link"
+                href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              ><a
+                class="uppercase-link"
+                href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              ><a
+                class="uppercase-link"
+                href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              ><a
+                class="uppercase-link"
+                href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              ><a
+                class="uppercase-link"
+                href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              ><a
+                class="uppercase-link"
+                href="https://www.uniqlo.com/uk/en/home"
+                >Uppercase link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        //Images lazy loaded
+        var pageLazyLoad = new LazyLoad({
+          elements_selector: '[loading=lazy]',
+          use_native: false,
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+          var lazyVideos = [].slice.call(
+            document.querySelectorAll('video.lazy')
+          );
+
+          if ('IntersectionObserver' in window) {
+            var lazyVideoObserver = new IntersectionObserver(function (
+              entries,
+              observer
+            ) {
+              entries.forEach(function (video) {
+                if (video.isIntersecting) {
+                  for (var source in video.target.children) {
+                    var videoSource = video.target.children[source];
+                    if (
+                      typeof videoSource.tagName === 'string' &&
+                      videoSource.tagName === 'SOURCE'
+                    ) {
+                      videoSource.src = videoSource.dataset.src;
+                    }
+                  }
+                  video.target.load();
+                  video.target.classList.remove('lazy');
+                  lazyVideoObserver.unobserve(video.target);
+                }
+              });
+            });
+
+            lazyVideos.forEach(function (lazyVideo) {
+              lazyVideoObserver.observe(lazyVideo);
+            });
+          }
+        });
+
+        //Banner Video's are not lazy loaded.
+        //Responsive code for changing between desktop and mobile video.
+        var video = document.querySelectorAll('video.responsive');
+        function addSourceToVideo(element, src) {
+          var source = document.createElement('source');
+          source.src = src;
+          source.type = 'video/mp4';
+          console.log(src);
+          element.appendChild(source);
+        }
+        function whichSizeVideo(element, src) {
+          var windowWidth = window.innerWidth
+            ? window.innerWidth
+            : $(window).width();
+          if (windowWidth >= 768) {
+            element.setAttribute('poster', src.dataset.desktopPoster);
+            addSourceToVideo(element, src.dataset.desktopVid);
+          } else {
+            addSourceToVideo(element, src.dataset.mobileVid);
+            element.setAttribute('poster', src.dataset.mobilePoster);
+          }
+        }
+        function videoSize() {
+          if (video !== undefined) {
+            video.forEach(function (element, index) {
+              whichSizeVideo(element, element);
+            });
+          }
+        }
+        videoSize();
+      </script>
+    </div>
+  </body>
+</html>
