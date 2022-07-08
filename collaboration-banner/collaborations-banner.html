@@ -19,6 +19,7 @@
       padding: 0;
     }
 
+    /* Container width matches the L3 grid  */
     #container {
       margin: 0px auto;
       max-width: 1400px;
@@ -39,6 +40,7 @@
       color: inherit;
       text-decoration: underline;
     }
+
     #container span {
       line-height: 2;
     }
@@ -57,21 +59,6 @@
     #container h4 {
       font-size: 14px;
       letter-spacing: 0.2px;
-    }
-
-    @media only screen and (max-width: 700px) {
-      #container h4 {
-        font-size: 12px;
-      }
-      #container h3 {
-        font-size: 14px;
-      }
-      #container h2 {
-        font-size: 20px;
-      }
-      #container div {
-        font-size: 10px;
-      }
     }
 
     #container .subheader {
@@ -136,6 +123,7 @@
     #container #collab-banner h2 {
       font-size: 28px;
     }
+
     #container #collab-banner .collab-logo {
       height: auto;
       width: 40%;
@@ -147,7 +135,6 @@
       grid-template-columns: repeat(2, 1fr);
       -webkit-box-align: center;
       -ms-flex-align: center;
-
       background-color: white;
       border: 1px solid #dadada;
     }
@@ -157,6 +144,18 @@
     }
 
     @media only screen and (max-width: 700px) {
+      #container h4 {
+        font-size: 12px;
+      }
+      #container h3 {
+        font-size: 14px;
+      }
+      #container h2 {
+        font-size: 20px;
+      }
+      #container div {
+        font-size: 10px;
+      }
       #container #collab-banner #collab-info {
         -ms-grid-columns: (1fr);
         grid-template-columns: repeat(1, 1fr);
