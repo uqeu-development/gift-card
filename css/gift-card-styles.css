@@ -214,7 +214,7 @@ body {
 }
 
 #container .hero-container {
-  height: 559px;
+  height: 550px;
   position: relative;
   font-size: 14px;
   margin-top: 0px;
@@ -224,9 +224,15 @@ body {
 
 #container .hero-container p {
   margin: 15px 0px;
+  font-size: 14px;
 }
 
-@media only screen and (min-width: 1000px) {
+#container .hero-container h1 {
+  font-size: 28px;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 768px) {
   #container .hero-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,24 +245,9 @@ body {
             justify-content: center;
     padding: 117px;
   }
-}
-
-#container .hero-container h1 {
-  font-size: 28px;
-  margin: 0px;
-}
-
-@media only screen and (min-width: 1000px) {
   #container .hero-container h1 {
     font-size: 38px;
   }
-}
-
-#container .hero-container p {
-  font-size: 14px;
-}
-
-@media only screen and (min-width: 1000px) {
   #container .hero-container p {
     max-width: 401px;
   }
@@ -288,7 +279,7 @@ body {
   font-size: 12px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
   #container .hero-container .hero-ctas {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,7 +311,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
   #container .desktop-faq-member {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -348,7 +339,29 @@ body {
   height: auto;
 }
 
-@media only screen and (min-width: 1000px) {
+#container .desktop-faq-member .faq-container a {
+  font-size: 14px;
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 176px;
+  height: 45px;
+  text-align: center;
+  font-family: Uniqlo pro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
   #container .desktop-faq-member .faq-container {
     height: 350px;
     margin-right: 7px;
@@ -368,7 +381,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
   #container .desktop-faq-member .become-member-container {
     height: 350px;
     margin-left: 7px;
@@ -383,11 +396,13 @@ body {
 }
 
 #container .desktop-faq-member .become-member-container input {
-  width: 94%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 414px;
   margin-top: 5px;
   height: 45px;
-  padding: 0px 3%;
+  padding: 10px;
   border: 0.5px solid black;
 }
 
@@ -417,7 +432,7 @@ body {
 }
 
 #container .gc-container {
-  padding: 30px 0px;
+  padding: 60px 0px 70px 0px;
   background: white;
 }
 
@@ -441,6 +456,38 @@ body {
   #container .gc-container .center h1 {
     max-width: 214px;
   }
+}
+
+#container .gc-container .ctas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container .gc-container .ctas .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
+  margin: 8px 0px;
+  margin: 10px;
 }
 
 #container .how-to-redem-container {
@@ -476,7 +523,11 @@ body {
 }
 
 #container .splide {
-  padding: 20px 0;
+  padding: 30px 0;
+}
+
+#container .splide .splide__track {
+  overflow: visible;
 }
 
 #container .splide__slide img {
@@ -491,6 +542,8 @@ body {
           transform: scale(0.8);
   -webkit-transform-origin: center center;
           transform-origin: center center;
+  height: 266px;
+  width: 422px;
 }
 
 #container .splide__slide.is-active img {
