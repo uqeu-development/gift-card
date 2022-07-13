@@ -324,6 +324,9 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
 
       .cta {
         display: flex;
@@ -364,6 +367,9 @@ body {
     padding: 30px 0;
     .splide__track {
       overflow: visible;
+      @media only screen and (max-width: 768px) {
+        overflow: hidden;
+      }
     }
   }
 
@@ -376,8 +382,6 @@ body {
       transition: transform 400ms;
       transform: scale(0.8);
       transform-origin: center center;
-      height: 266px;
-      width: 422px;
     }
   }
 
@@ -392,6 +396,7 @@ body {
   @media only screen and (max-width: 768px) {
     .splide__arrows {
       display: none;
+      overflow: hidden;
     }
   }
   .splide__arrow:after {

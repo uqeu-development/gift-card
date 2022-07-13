@@ -471,6 +471,12 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+  #container .gc-container .ctas {
+    display: none;
+  }
+}
+
 #container .gc-container .ctas .cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,6 +536,12 @@ body {
   overflow: visible;
 }
 
+@media only screen and (max-width: 768px) {
+  #container .splide .splide__track {
+    overflow: hidden;
+  }
+}
+
 #container .splide__slide img {
   display: block;
   width: 100%;
@@ -542,8 +554,6 @@ body {
           transform: scale(0.8);
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  height: 266px;
-  width: 422px;
 }
 
 #container .splide__slide.is-active img {
@@ -554,6 +564,7 @@ body {
 @media only screen and (max-width: 768px) {
   #container .splide__arrows {
     display: none;
+    overflow: hidden;
   }
 }
 
