@@ -103,7 +103,7 @@ body {
 }
 
 #container p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 4px auto;
   letter-spacing: 0.2px;
   font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans, Roboto, Arial, Arial Unicode MS, sans-serif;
@@ -111,7 +111,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   #container p {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -219,12 +219,18 @@ body {
   font-size: 14px;
   margin-top: 0px;
   padding: 34px 20px;
-  background-color: #d3d3d3;
+  background-color: #ebebeb;
 }
 
 #container .hero-container p {
-  margin: 15px 0px;
+  margin: 15px 0px 5px;
   font-size: 14px;
+}
+
+#container .hero-container .note {
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
 }
 
 #container .hero-container h1 {
@@ -249,7 +255,7 @@ body {
     font-size: 38px;
   }
   #container .hero-container p {
-    max-width: 401px;
+    max-width: 450px;
   }
 }
 
@@ -272,7 +278,7 @@ body {
 
 #container .hero-container .small-link {
   position: absolute;
-  bottom: 26px;
+  bottom: 62px;
   margin-top: 30px;
   font-weight: 500;
   font-family: helvetica, arial, sans-serif;
@@ -337,6 +343,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
+}
+
+#container .desktop-faq-member .faq-container p {
+  margin-bottom: 15px;
 }
 
 #container .desktop-faq-member .faq-container a {
@@ -429,7 +439,7 @@ body {
 
 #container .desktop-faq-member .become-member-container #sign-up-form #thank-you-msg {
   font-size: 18px;
-  font-family: 'uniqlo pro';
+  font-family: "uniqlo pro";
   text-transform: uppercase;
 }
 
@@ -532,6 +542,13 @@ body {
   }
 }
 
+#container .how-to-redem-container .note {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #container .tc {
   font-size: 10px;
   color: grey;
@@ -565,11 +582,15 @@ body {
           transform: scale(0.8);
   -webkit-transform-origin: center center;
           transform-origin: center center;
+  -webkit-box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.15);
 }
 
 #container .splide__slide.is-active img {
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.35);
 }
 
 @media only screen and (max-width: 768px) {
@@ -659,7 +680,7 @@ body {
 }
 
 #container .all-steps .step-rows .step-text .small {
-  font-size: 10px;
+  font-size: 12px;
   text-align: left;
 }
 /*# sourceMappingURL=gift-card-styles.css.map */

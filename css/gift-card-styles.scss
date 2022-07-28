@@ -69,13 +69,13 @@ body {
     }
   }
   p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 4px auto;
     letter-spacing: 0.2px;
     font-family: Helvetica Neue, HelveticaNeue, Helvetica, Segoe UI, Noto Sans,
       Roboto, Arial, Arial Unicode MS, sans-serif;
     @media only screen and (max-width: 768px) {
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
     }
   }
@@ -160,10 +160,15 @@ body {
     font-size: 14px;
     margin-top: 0px;
     padding: 34px 20px;
-    background-color: #d3d3d3;
+    background-color: #ebebeb;
     p {
-      margin: 15px 0px;
+      margin: 15px 0px 5px;
       font-size: 14px;
+    }
+    .note {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
     }
     h1 {
       font-size: 28px;
@@ -178,7 +183,7 @@ body {
         font-size: 38px;
       }
       p {
-        max-width: 401px;
+        max-width: 450px;
       }
     }
 
@@ -192,7 +197,7 @@ body {
     }
     .small-link {
       position: absolute;
-      bottom: 26px;
+      bottom: 62px;
       margin-top: 30px;
       font-weight: 500;
       font-family: helvetica, arial, sans-serif;
@@ -231,6 +236,9 @@ body {
       justify-content: center;
       align-items: center;
       height: auto;
+      p {
+        margin-bottom: 15px;
+      }
 
       a {
         font-size: 14px;
@@ -302,7 +310,7 @@ body {
 
       #sign-up-form #thank-you-msg {
         font-size: 18px;
-        font-family: 'uniqlo pro';
+        font-family: "uniqlo pro";
         text-transform: uppercase;
       }
     }
@@ -361,6 +369,12 @@ body {
       display: flex;
       align-items: center;
     }
+    .note {
+      margin-top: 20px;
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   .tc {
@@ -382,12 +396,15 @@ body {
   // Generic Slide
   .splide__slide {
     img {
+      // border: 1px solid rgb(216, 216, 216);
       display: block;
       width: 100%;
       border-radius: 8px;
       transition: transform 400ms;
       transform: scale(0.8);
       transform-origin: center center;
+      -webkit-box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.15);
     }
   }
 
@@ -395,6 +412,8 @@ body {
   .splide__slide.is-active {
     img {
       transform: scale(1);
+      -webkit-box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.35);
     }
   }
 
@@ -458,7 +477,7 @@ body {
           margin: 0px;
         }
         .small {
-          font-size: 10px;
+          font-size: 12px;
           text-align: left;
         }
       }
