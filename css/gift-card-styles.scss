@@ -155,12 +155,18 @@ body {
     font-size: 12px;
   }
   .hero-container {
-    height: 550px;
+    height: 650px;
     position: relative;
     font-size: 14px;
     margin-top: 0px;
     padding: 34px 20px;
     background-color: #ebebeb;
+    background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1.jpg");
+    background-size: cover;
+    background-position: right;
+    @media only screen and (max-width: 768px) {
+      background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg");
+    }
     p {
       margin: 15px 0px 5px;
       font-size: 14px;
