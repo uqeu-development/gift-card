@@ -162,17 +162,16 @@ body {
     margin-top: 0px;
     padding: 34px 20px;
     background-color: #ebebeb;
-    background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1.jpg");
+    background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1.jpg');
     background-size: cover;
     background-position: right;
     @media only screen and (max-width: 768px) {
-      background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg");
+      background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg');
       height: 700px;
       font-size: 12px;
     }
     p {
       margin: 15px 0px 5px;
-      font-size: 14px;
     }
     .note {
       position: absolute;
@@ -276,7 +275,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-
+      padding: 40px 6%;
       text-align: center;
       @media only screen and (min-width: 768px) {
         height: 350px;
@@ -299,27 +298,33 @@ body {
         border: 0.5px solid black;
       }
 
-      .form-container .privacy-text {
-        color: #aca6a6;
-        font-size: 8px;
-        margin-top: 5px;
-        text-align: left;
-      }
+      .form-container {
+        h1 {
+          margin-bottom: 15px;
+        }
+        .privacy-text {
+          color: #aca6a6;
+          font-size: 8px;
+          margin-top: 10px;
+          text-align: left;
+          max-width: 414px;
 
-      .form-container .privacy-text .hide {
-        display: none !important;
-      }
-      .form-container .privacy-text .show {
-        display: block !important;
-      }
-      .form-container .privacy-text .active {
-        color: black !important;
-        border-bottom: 2px solid black !important;
+          .hide {
+            display: none !important;
+          }
+          .show {
+            display: block !important;
+          }
+          .active {
+            color: black !important;
+            border-bottom: 2px solid black !important;
+          }
+        }
       }
 
       #sign-up-form #thank-you-msg {
         font-size: 18px;
-        font-family: "uniqlo pro";
+        font-family: 'uniqlo pro';
         text-transform: uppercase;
       }
     }
@@ -404,10 +409,11 @@ body {
 
   // Generic Slide
   .splide__slide {
+    min-width: 250px;
     img {
-      // border: 1px solid rgb(216, 216, 216);
       display: block;
       width: 100%;
+      margin: 10px 0;
       border-radius: 8px;
       transition: transform 400ms;
       transform: scale(0.8);
@@ -419,6 +425,8 @@ body {
 
   // Active Slide
   .splide__slide.is-active {
+    // min-width: 250px;
+    // padding: 10px 0 20px 0px;
     img {
       transform: scale(1);
       -webkit-box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.35);
@@ -482,9 +490,13 @@ body {
         margin: 0px 0px 0px 10px;
         .large {
           text-align: left;
-          font-size: 16px;
+          font-size: 14px;
           margin: 0px;
+          @media only screen and (min-width: 768px) {
+            font-size: 16px;
+          }
         }
+
         .small {
           font-size: 12px;
           text-align: left;

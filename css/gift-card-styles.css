@@ -229,12 +229,13 @@ body {
 @media only screen and (max-width: 768px) {
   #container .hero-container {
     background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg");
+    height: 700px;
+    font-size: 12px;
   }
 }
 
 #container .hero-container p {
   margin: 15px 0px 5px;
-  font-size: 14px;
 }
 
 #container .hero-container .note {
@@ -244,7 +245,7 @@ body {
 }
 
 #container .hero-container h1 {
-  font-size: 28px;
+  font-size: 20px;
   margin: 0px;
 }
 
@@ -399,6 +400,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px 6%;
   text-align: center;
 }
 
@@ -427,11 +429,16 @@ body {
   border: 0.5px solid black;
 }
 
+#container .desktop-faq-member .become-member-container .form-container h1 {
+  margin-bottom: 15px;
+}
+
 #container .desktop-faq-member .become-member-container .form-container .privacy-text {
   color: #aca6a6;
   font-size: 8px;
-  margin-top: 5px;
+  margin-top: 10px;
   text-align: left;
+  max-width: 414px;
 }
 
 #container .desktop-faq-member .become-member-container .form-container .privacy-text .hide {
@@ -449,7 +456,7 @@ body {
 
 #container .desktop-faq-member .become-member-container #sign-up-form #thank-you-msg {
   font-size: 18px;
-  font-family: "uniqlo pro";
+  font-family: 'uniqlo pro';
   text-transform: uppercase;
 }
 
@@ -580,9 +587,14 @@ body {
   }
 }
 
+#container .splide__slide {
+  min-width: 250px;
+}
+
 #container .splide__slide img {
   display: block;
   width: 100%;
+  margin: 10px 0;
   border-radius: 8px;
   -webkit-transition: -webkit-transform 400ms;
   transition: -webkit-transform 400ms;
@@ -685,8 +697,14 @@ body {
 
 #container .all-steps .step-rows .step-text .large {
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  #container .all-steps .step-rows .step-text .large {
+    font-size: 16px;
+  }
 }
 
 #container .all-steps .step-rows .step-text .small {
