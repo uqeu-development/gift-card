@@ -32,10 +32,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/uqeu-development/adobe-form-v2@latest/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js"></script>
     <div class="container" id="container">
       <!-- HERO -->
-      <div class="box hero-container">
+      <div class="box hero-container lazy">
         <h1>UNIQLO Geschenkkarten</h1>
         <p>
           Bist du auf der Suche nach dem perfekten Geschenk, aber unsicher bei
@@ -154,27 +154,47 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-07.png"
+                  class="lady"
+                  loading="lazy"
+                  width="282"
+                  height="178"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-07.png"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-02.png"
+                  class="lady"
+                  loading="lazy"
+                  width="282"
+                  height="178"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-02.png"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-01.png"
+                  class="lady"
+                  loading="lazy"
+                  width="282"
+                  height="178"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-01.png"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-03.png"
+                  class="lady"
+                  loading="lazy"
+                  width="282"
+                  height="178"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-03.png"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-04-de.png"
+                  class="lady"
+                  loading="lazy"
+                  width="282"
+                  height="178"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-04-de.png"
                 />
               </li>
               <li class="splide__slide">
@@ -282,6 +302,11 @@
           $('#thank-you-msg').text(msg);
           $('#thank-you-msg').show(msg);
         };
+        var pageLazyLoad = new LazyLoad({
+          elements_selector: '[loading=lazy]',
+
+          use_native: false,
+        });
       </script>
     </div>
   </body>

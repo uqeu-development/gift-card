@@ -32,10 +32,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/uqeu-development/adobe-form-v2@latest/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js"></script>
     <div class="container" id="container">
       <!-- HERO -->
-      <div class="box hero-container">
+      <div class="box hero-container lazy">
         <h1>Uniqlo Gift Cards</h1>
         <p>
           Looking for the perfect present but can't quite decide what's right?
@@ -54,8 +54,6 @@
             href="https://www.buyatab.com/custom/uniqlo/?page=egiftGBP&culture=en-us&currency=gbp"
             >Shop Now</a
           >
-
-          <!-- <a class="cta" href="http://uniqlo.com">physical gift card</a> -->
         </div>
 
         <a
@@ -142,33 +140,52 @@
         <div
           id="splide"
           class="splide"
-          data-splide='{"type": "loop","perPage": 2,"focus": "center", "flickMaxPages": 5, "updateOnMove": true, "pagination": false, "arrows": true, "padding": "10%", "throttle": 300 ,"wheel": true, "waitForTransition": true, "wheelSleep": 10, "breakpoints": { "2400": {"perPage": 2,"padding": "25%"},"950": {"perPage": 1, "padding": "15%"}}}'
+          data-splide='{"type": "loop","perPage": 2,"focus": "center", "flickMaxPages": 9, "updateOnMove": true, "pagination": false, "arrows": true, "padding": "10%", "throttle": 300 ,"wheel": true, "waitForTransition": true, "wheelSleep": 10, "breakpoints": { "2400": {"perPage": 2,"padding": "25%"},"950": {"perPage": 1, "padding": "15%"}}}'
         >
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-07.png"
+                  loading="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-07.png"
+                  width="282"
+                  height="178"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-02.png"
+                  class="lazy"
+                  loading="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-02.png"
+                  width="282"
+                  height="178"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-01.png"
+                  class="lazy"
+                  loading="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-01.png"
+                  width="282"
+                  height="178"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-03.png"
+                  class="lazy"
+                  loading="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-03.png"
+                  width="282"
+                  height="178"
                 />
               </li>
               <li class="splide__slide">
                 <img
-                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-04-en.png"
+                  class="lazy"
+                  loading="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-04-en.png"
+                  width="282"
+                  height="178"
                 />
               </li>
               <li class="splide__slide">
@@ -271,6 +288,12 @@
           $('#thank-you-msg').text(msg);
           $('#thank-you-msg').show(msg);
         };
+
+        var pageLazyLoad = new LazyLoad({
+          elements_selector: '[loading=lazy]',
+
+          use_native: false,
+        });
       </script>
     </div>
   </body>
