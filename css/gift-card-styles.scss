@@ -156,27 +156,29 @@ body {
     font-size: 12px;
   }
 
-  .hero-container.lazy {
-    background-image: none;
-    background-color: #f1f1fa;
-    height: 620px;
-    width: 1200px;
-  }
+
   .hero-container {
-    height: 650px;
+  
     position: relative;
     font-size: 14px;
     margin-top: 0px;
     padding: 34px 20px;
-    background-color: #ebebeb;
-    background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1.jpg');
-    background-size: cover;
-    background-position: right;
-    @media only screen and (max-width: 768px) {
-      background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg');
-      height: 700px;
-      font-size: 12px;
-    }
+
+      background-color: #ebebeb;
+        background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1.jpg');
+        background-size: cover;
+        background-position: right;
+        width: 1200px;
+        height: 650px;
+        @media only screen and (max-width: 768px) {
+          background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg');
+          height: 700px;
+          height: 400px;
+          font-size: 12px;
+        }
+    
+
+    
     p {
       margin: 15px 0px 5px;
     }
@@ -401,7 +403,7 @@ body {
   .tc {
     font-size: 10px;
     color: grey;
-    margin: 40px 3px 3px 4px;
+    margin: 40px 3% 0 3%;
     text-align: left;
   }
   .splide {

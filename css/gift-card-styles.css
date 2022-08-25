@@ -214,6 +214,13 @@ body {
   font-size: 12px;
 }
 
+#container #hero {
+  background-image: none;
+  background-color: #f1f1fa;
+  height: 620px;
+  width: 1200px;
+}
+
 #container .hero-container {
   height: 650px;
   position: relative;
@@ -569,7 +576,7 @@ body {
 #container .tc {
   font-size: 10px;
   color: grey;
-  margin: 40px 3px 3px 4px;
+  margin: 40px 3% 0 3%;
   text-align: left;
 }
 
