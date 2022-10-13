@@ -173,7 +173,7 @@ body {
         @media only screen and (max-width: 768px) {
           background-image: url('https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg');
           height: 700px;
-          height: 400px;
+          width: 400px;
           font-size: 12px;
         }
     
@@ -214,7 +214,7 @@ body {
     }
     .small-link {
       position: absolute;
-      bottom: 62px;
+      bottom: 30px;
       margin-top: 30px;
       font-weight: 500;
       font-family: helvetica, arial, sans-serif;
@@ -360,6 +360,9 @@ body {
       @media only screen and (max-width: 768px) {
         transform: scale(0.8);
         transform-origin: center center;
+        display: flex;
+      flex-direction: column;
+      margin: 0px auto;
       }
 
       .cta {
@@ -375,6 +378,7 @@ body {
         margin: 10px;
         @media only screen and (max-width: 768px) {
           font-size: 18px;
+          width: 350px;
         }
       }
     }
