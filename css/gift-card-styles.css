@@ -231,7 +231,7 @@ body {
   #container .hero-container {
     background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg");
     height: 700px;
-    width: 400px;
+    width: 100%;
     font-size: 12px;
   }
 }
@@ -287,6 +287,15 @@ body {
 
 #container .hero-container .hero-ctas .cta {
   margin: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container .hero-container .hero-ctas .cta span {
+  display: block;
+  font-size: 12px;
 }
 
 #container .hero-container .small-link {
