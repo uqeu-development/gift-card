@@ -220,7 +220,7 @@ body {
   margin-top: 0px;
   padding: 34px 20px;
   background-color: #ebebeb;
-  background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1.jpg");
+  background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-hero-desktop.jpg");
   background-size: cover;
   background-position: right;
   width: 1200px;
@@ -229,10 +229,11 @@ body {
 
 @media only screen and (max-width: 768px) {
   #container .hero-container {
-    background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/l1-mb.jpg");
+    background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-hero-mb.jpg");
     height: 700px;
     width: 100%;
     font-size: 12px;
+    background-position: center;
   }
 }
 
@@ -336,6 +337,17 @@ body {
   }
   #container .hero-container .small-link {
     position: static;
+  }
+}
+
+#container #es-hero {
+  color: white;
+  background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/gift-guide/gc-hero-desktop-holiday.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+  #container #es-hero {
+    background-image: url("https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/gift-guide/gc-hero-mb-holiday.jpg");
   }
 }
 
@@ -708,6 +720,21 @@ body {
   height: 37px;
   min-width: 37px;
   font-size: 19px;
+}
+
+#container .all-steps .step-rows .redeem-store {
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+#container .all-steps .step-rows .redeem-store h4 {
+  text-align: left;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#container .all-steps .step-rows .redeem-store p {
+  text-align: left;
 }
 
 #container .all-steps .step-rows .step-text {

@@ -32,7 +32,7 @@
 
   <div class="container" id="container">
     <!-- HERO -->
-    <div class="box hero-container lazy">
+    <div class="box hero-container lazy" id="es-hero">
       <h1>Tarjetas de regalo de UNIQLO</h1>
       <p>
         ¿Estás buscando el regalo perfecto, pero no puedes decidirte? Puedes
@@ -56,8 +56,8 @@
       <a class="small-link" href="https://wbiprod.storedvalue.com/wbir/clients/uniqlo?lng=es">Consulta el saldo de tu
         tarjeta de regalo</a>
 
-      <p style="font-size: 10px">Ten en cuenta que tanto las tarjetas digitales como físicas solo
-        pueden utilizarse online.</p>
+      <!-- <p style="font-size: 10px">Ten en cuenta que tanto las tarjetas digitales como físicas solo
+        pueden utilizarse online.</p> -->
 
     </div>
     <!-- FAQ -->
@@ -118,7 +118,11 @@
         data-splide='{"type": "loop","perPage": 2,"focus": "center", "flickMaxPages": 5, "updateOnMove": true, "pagination": false, "arrows": true, "padding": "10%", "throttle": 300 ,"wheel": true, "waitForTransition": true, "wheelSleep": 10, "breakpoints": { "2400": {"perPage": 2,"padding": "25%"},"950": {"perPage": 1, "padding": "15%"}}}'>
         <div class="splide__track">
           <ul class="splide__list">
-
+            <li class="splide__slide">
+              <img loading="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/gift-guide/gc-08.jpg"
+                width="282" height="178" />
+            </li>
             <li class="splide__slide">
               <img class="lady" loading="lazy" width="282" height="178"
                 data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2022/content-pages/giftcard/gc-07.png" />
@@ -218,11 +222,15 @@
           </div>
         </div>
         <div class="step-rows">
-          <p class="note">
-            <!-- Las tarjetas de regalo físicas estarán disponibles muy pronto. -->
-            Ten en cuenta que tanto las tarjetas digitales como físicas solo
-            pueden utilizarse online.
-          </p>
+
+          <div class="redeem-store">
+            <h4>¿Cómo utilizo mi tarjeta regalo UNIQLO en tienda?</h4>
+            <p>Puede utilizar su tarjeta regalo en las cajas de cualquier tienda UNIQLO dentro del mismo país de la
+              compra original. Sólo se puede utilizar una tarjeta regalo por transacción. Las tarjetas regalo pueden
+              utilizarse junto con cualquier otro método de pago de la tienda.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
